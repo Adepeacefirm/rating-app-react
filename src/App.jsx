@@ -34,7 +34,7 @@ const App = () => {
                     handleRating(num);
                   }}
                   key={num}
-                  className={`mx-2 rounded-full w-8 h-8 text-center text-sm text-[hsl(217,12%,63%)] flex justify-center items-center hover:cursor-pointer  ${
+                  className={`mx-2 rounded-full w-8 h-8 text-center text-sm text-[hsl(217,12%,63%)] flex justify-center items-center hover:cursor-pointer hover:transition-colors duration-300 ${
                     num === 5 ? "hover:bg-[hsl(25,97%,53%)] hover:text-black" : "hover:bg-white hover:text-black"
                   } ${
                     rating === num
@@ -51,7 +51,7 @@ const App = () => {
             </div>
             <button
               onClick={handleSubmit}
-              className="my-5 w-full bg-[hsl(25,97%,53%)] rounded-2xl py-2 font-medium hover:bg-white hover:cursor-pointer"
+              className="my-5 w-full bg-[hsl(25,97%,53%)] rounded-2xl py-2 font-medium hover:bg-white hover:cursor-pointer hover:transition-colors duration-300"
             >
               {" "}
               SUBMIT{" "}
